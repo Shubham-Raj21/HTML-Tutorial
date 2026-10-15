@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+</head>
+<body>
+    <h1>Schedule Your Holiday on Paradise Island</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">Full Name:</label>
+            <input 
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required/>
+            <br /><br />
+            
+            <label for="email">Email:</label>
+            <input 
+            id="email"
+            type="email"
+            name="email"
+            placeholder="abc@gmail.com"
+            required/>
+            <br /><br />
+
+            <label for="phone">Phone:</label>
+            <input 
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="+91-7544884493"
+            required/>
+            <br /><br />
+
+            <label for="dob">Date of Birth</label>
+            <input 
+            id="dob"
+            type="date"
+            name="dob"
+            required/>
+        </fieldset>
+        <br /><br />
+        <fieldset>
+            <legend>Trip Details</legend>
+            <label for="arrival">Arrival:</label>
+            <input 
+            id="arrival"
+            name="arrival"
+            type="datetime-local"
+            required/>
+            <br /><br />
+
+            <label for="departure">Departure:</label>
+            <input 
+            id="departure"
+            name="departure"
+            type="datetime-local"
+            readonly/>
+            <br /><br />
+
+            <label for="travellers">No. of Travellers:</label>
+            <input 
+            id="traverllers"
+            type="number"
+            min="0"
+            max="100"
+            required/>
+            <br /><br />
+
+            <label for="preferences">Accomondation Preferences</label>
+            <select id="preferences"name="preferences">
+                <optgroup label="Hotel">
+                    <option value="1-star">1-star</option>
+                    <option value="2-star">2-star</option>
+                    <option value="3-star">3-star</option>
+                    <option value="4-star">4-star</option>
+                    <option value="5-star">5-star</option>
+                </optgroup>
+                <option value="resort">Resort</option>
+                <option value="guesthouuse">Guest House</option>
+                <option value="villa" selected>Villa</option>
+            </select>
+            <br /><br />
+            <fieldset>
+                <legend>Preferred Activities:</legend>
+                <input 
+                id="snorkelling"
+                name="activities"
+                type="checkbox"
+                value="snorkelling"/>
+                <label for="snorkelling">Snorkelling</label><br />
+
+                <input 
+                id="hiking"
+                name="activities"
+                type="checkbox"
+                value="hiking"/>
+                <label for="hiking">Hiking</label><br />
+
+                <input 
+                id="spa"
+                name="activities"
+                type="checkbox"
+                value="spa"/>
+                <label for="spa">Spa</label>
+            </fieldset>
+            <p><b>Baby on Board?</b></p>
+            <input 
+            id="yes"
+            name="board"
+            value="yes"
+            type="radio"/>
+            <label for="yes">Yes</label>
+
+            <input 
+            id="no"
+            type="radio"
+            name="board"
+            value="no"
+            checked/>
+            <label for="no">No</label>
+
+            <p><b>Special Requests</b></p>
+            <textarea 
+            name="requests"
+            id="special" 
+            cols="40" rows="10" 
+            placeholder="Please text here your special requests."></textarea>
+        </fieldset><br /><br />
+        <button type="submit">Submit</button> 
+        <button type="reset">Reset</button>
+    </form>
+    
+</body>
+</html>

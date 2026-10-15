@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+</head>
+<body>
+  <h1>Please Schedule your trip</h1>
+  <form action="">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" minlength="5" maxlength="10" required placeholder="Enter your Username">
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="Enter your Email">
+    <br><br>
+
+    <label for="phone">Phone Number: </label>
+    <input type="tel" name="phone" id="phone" required placeholder="Enter Your Contact Number: ">
+    <br><br>
+
+    <label for="DOB">Date Of Birth: </label>
+    <input type="date" name="DOB" id="DOB" required>
+    <br><br>
+
+    <label for="arrival">Arrival: </label>
+    <input type="datetime-local" name="arrival" id="arrival" required >
+    <br><br>
+
+    <label for="departure">Departure: </label>
+    <input type="datetime-local" name="departure" id="departure" required min="2021-01-01" max="2026-12-01"/>
+    <br><br>
+
+    <label for="numberoftravelers">Number Of Travelers: </label>
+    <input type="number" name="numberoftravelers" id="numberoftravelers" required min="3" max="10">
+    <br><br>
+
+    <label for="accommodation">Accommodation Number: </label>
+    <select name="accommodation" id="accommodation">
+      <option value="guesthouse">Guest House</option>
+    </select>
+    <br><br>
+
+    <!-- Preferred Activities: checkbox -->
+    <p>Preferred Activities:</p>
+    <input type="checkbox" name="Activity" value="snorkelling" id="snorkelling">
+    <label for="snorkelling">Snorkelling: </label>
+    <br>
+    <input type="checkbox" name="Activities" value="boatriding" id="boatriding">
+    <label for="boatriding">Boat Riding</label>
+    <br>
+    <input type="checkbox" name="Activities" value="scobadiving" id="scobadiving">
+    <label for="scobadiving">Scoba Diving</label>
+    <br><br>
+
+
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" minlength="5" maxlength="10" required placeholder="Enter your Password">
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body> 
+</html>
